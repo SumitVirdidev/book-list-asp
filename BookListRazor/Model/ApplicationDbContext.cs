@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+
+namespace BookListRazor.Model
+{
+    public class ApplicationDbContext :DbContext
+    {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)
+        {
+
+        }
+        public DbSet<Book> Book { get; set; }
+
+        internal Task FirstOrDefaultAsync(Func<object, bool> p)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
