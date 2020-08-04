@@ -12,8 +12,8 @@ function loadDataTable() {
         },
         "columns": [
             { "data": "name", "width": "20%" },
-            { "data": "name", "width": "20%" },
-            { "data": "name", "width": "20%" },
+            { "data": "author", "width": "20%" },
+            { "data": "isbn", "width": "20%" },
             {
                 "data": "id",
                 "render": function (data) {
